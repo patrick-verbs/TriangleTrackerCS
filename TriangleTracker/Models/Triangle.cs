@@ -4,7 +4,11 @@ namespace TriangleTracker.TriangleClass
   {
     public string TypeOfTriangle(int side1, int side2, int side3)
     {
-      return "false";
+      if(side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1)
+      {
+        return "Not a Triangle";
+      }
+      return "Error";
     }
   }
 }
