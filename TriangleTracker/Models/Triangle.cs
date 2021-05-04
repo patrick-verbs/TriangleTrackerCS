@@ -16,6 +16,10 @@ namespace TriangleTracker.TriangleClass
       {
         return "Isosceles Triangle";
       }
+      else if(side1 != side2 && side1 != side3 && side2 != side3)
+      {
+        return "Scalene Triangle";
+      }
 
       return "Error";
     }
