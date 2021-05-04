@@ -8,6 +8,10 @@ namespace TriangleTracker.TriangleClass
       {
         return "Not a Triangle";
       }
+      else if(side1 == side2 && side1 == side3)
+      {
+        return "false";
+      }
       return "Error";
     }
   }
