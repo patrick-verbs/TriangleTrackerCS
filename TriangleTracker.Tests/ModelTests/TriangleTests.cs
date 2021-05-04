@@ -25,5 +25,11 @@ namespace TriangleTracker.TestTools
     {
       Assert.AreEqual("Isosceles Triangle", _triangleObject.TypeOfTriangle(3, 3, 5));
     }
+
+    [TestMethod]
+    public void TypeOfTriangle_Scalene()
+    {
+      Assert.AreEqual("Scalene Triangle", _triangleObject.TypeOfTriangle(3, 4, 5));
+    }
   }
 }
